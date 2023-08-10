@@ -1,3 +1,5 @@
+const players = require("./players-dict.js");
+
 function changeTable(winner) {}
 
 function randomSurface() {
@@ -10,58 +12,28 @@ function randomCondition() {
   return conditions[Math.floor(Math.random() * conditions.length)];
 }
 
-function fetch_player_value(pname, stat) {
-  return new Promise((resolve, reject) => {
-    fetch("players.json")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        let playerVal = null;
-        data.Players.forEach((player) => {
-          if (player.name == pname) {
-            playerVal = player[stat];
-          }
-        });
-        resolve(playerVal);
-      })
-      .catch((error) => {
-        reject(error);
-      });
-  });
-}
-
-fetch_player_value("Matt", "lawn")
-  .then((value) => {
-    console.log(value);
-    console.log("Ran");
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
-
 function match(p1, p2) {
-  surf = randomSurface();
-  cond = randomCondition();
+  const surf = randomSurface();
+  const cond = randomCondition();
 
-  p1_surf = fetch_player_value(p1, surf);
-  p1_cond = fetch_player_value(p1, cond);
-  p1_score = p1_surf * p1_cond;
+  const p1_surf = p1[surf];
+  const p1_cond = p1[cond];
+  const p1_score = p1_surf * p1_cond;
 
-  p2_surf = fetch_player_value(p2, surf);
-  p2_cond = fetch_player_value(p2, cond);
-  p2_score = p2_surf * p2_cond;
+  const p2_surf = p2[surf];
+  const p2_cond = p2[cond];
+  const p2_score = p2_surf * p2_cond;
 
   if (p1_score > p2_score) {
-    winner = p1;
+    return p1.name;
   } else if (p1_score < p2_score) {
-    winner = p2;
+    return p2.name;
   }
 
   // if equal score recursively call match until winner found
   else {
-    winner = match(p1, p2);
+    return match(p1, p2);
   }
-
-  return winner;
 }
+
+console.log(match(players.Eoghan, players.Matt));

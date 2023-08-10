@@ -1,0 +1,177 @@
+module.exports = {
+Matt : {
+    "name": "Matt", 
+    "lawn": 6,
+    "clay": 4,
+    "hard": 1,
+    "rain": 9,
+    "dry": 1,
+    "snow": 8,
+    "sunny": 9,
+    "tournaments": 0
+},
+Fin : {
+    "name": "Fin", 
+    "lawn": 10,
+    "clay": 5,
+    "hard": 8,
+    "rain": 6,
+    "dry": 8,
+    "snow": 3,
+    "sunny": 7,
+    "tournaments": 0
+},
+Rosie : {
+    "name": "Rosie", 
+    "lawn": 6,
+    "clay": 1,
+    "hard": 10,
+    "rain": 2,
+    "dry": 3,
+    "snow": 3,
+    "sunny": 8,
+    "tournaments": 0
+},
+Frankie : {
+    "name": "Frankie", 
+    "lawn": 5,
+    "clay": 8,
+    "hard": 10,
+    "rain": 1,
+    "dry": 2,
+    "snow": 3,
+    "sunny": 6,
+    "tournaments": 0
+},
+Ash : {
+    "name": "Ash", 
+    "lawn": 4,
+    "clay": 9,
+    "hard": 10,
+    "rain": 4,
+    "dry": 1,
+    "snow": 8,
+    "sunny": 1,
+    "tournaments": 0
+},
+Zak : {
+    "name": "Zak", 
+    "lawn": 9,
+    "clay": 8,
+    "hard": 2,
+    "rain": 4,
+    "dry": 4,
+    "snow": 10,
+    "sunny": 5,
+    "tournaments": 0
+},
+Jerry : {
+    "name": "Jerry", 
+    "lawn": 1,
+    "clay": 5,
+    "hard": 7,
+    "rain": 1,
+    "dry": 2,
+    "snow": 9,
+    "sunny": 10,
+    "tournaments": 0
+},
+Bert : {
+    "name": "Bert", 
+    "lawn": 7,
+    "clay": 10,
+    "hard": 1,
+    "rain": 3,
+    "dry": 1,
+    "snow": 10,
+    "sunny": 10,
+    "tournaments": 0
+},
+Vladi : {
+    "name": "Vladi", 
+    "lawn": 6,
+    "clay": 2,
+    "hard": 5,
+    "rain": 6,
+    "dry": 4,
+    "snow": 8,
+    "sunny": 6,
+    "tournaments": 0
+},
+Thomas : {
+    "name": "Thomas", 
+    "lawn": 2,
+    "clay": 5,
+    "hard": 8,
+    "rain": 8,
+    "dry": 8,
+    "snow": 7,
+    "sunny": 6,
+    "tournaments": 0
+},
+Bob : {
+    "name": "Bob", 
+    "lawn": 9,
+    "clay": 10,
+    "hard": 4,
+    "rain": 4,
+    "dry": 9,
+    "snow": 7,
+    "sunny": 7,
+    "tournaments": 0
+},
+Steve : {
+    "name": "Steve", 
+    "lawn": 7,
+    "clay": 5,
+    "hard": 4,
+    "rain": 10,
+    "dry": 4,
+    "snow": 4,
+    "sunny": 5,
+    "tournaments": 0
+},
+Jo : {
+    "name": "Jo", 
+    "lawn": 7,
+    "clay": 4,
+    "hard": 1,
+    "rain": 10,
+    "dry": 4,
+    "snow": 3,
+    "sunny": 7,
+    "tournaments": 0
+},
+Kenzie : {
+    "name": "Kenzie", 
+    "lawn": 1,
+    "clay": 5,
+    "hard": 1,
+    "rain": 1,
+    "dry": 5,
+    "snow": 1,
+    "sunny": 4,
+    "tournaments": 0
+},
+Goerge : {
+    "name": "Goerge", 
+    "lawn": 4,
+    "clay": 3,
+    "hard": 5,
+    "rain": 2,
+    "dry": 10,
+    "snow": 5,
+    "sunny": 3,
+    "tournaments": 0
+},
+Eoghan : {
+    "name": "Eoghan", 
+    "lawn": 3,
+    "clay": 7,
+    "hard": 6,
+    "rain": 7,
+    "dry": 8,
+    "snow": 4,
+    "sunny": 2,
+    "tournaments": 0
+}};

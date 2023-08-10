@@ -1,6 +1,6 @@
 import random
 
-file_path = 'json/players.json'
+file_path = 'players.json'
 
 names = ['Matt', 'Fin', 'Rosie', 'Frankie', 'Ash', 'Zak', 'Jerry', 'Bert', 'Vladi', 'Thomas', 'Bob', 'Steve', 'Jo', 'Kenzie', 'Goerge', 'Eoghan']
 
