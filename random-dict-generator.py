@@ -24,8 +24,7 @@ def generate_dict():
             out += ','
 
     out += '};'
-    return out
-
+    return out  
 
 with open(file_path, 'w') as file: 
     file.write(generate_dict())
