@@ -235,10 +235,6 @@ function randomSurface() {
   return surfaces[Math.floor(Math.random() * surfaces.length)];
 }
 
-function win_changer(winner) {
-  winner.wins += 1;
-}
-
 function randomCondition() {
   const conditions = ["rain", "snow", "dry", "sunny"];
   return conditions[Math.floor(Math.random() * conditions.length)];
@@ -291,6 +287,7 @@ function generateRows() {
       <td>${localStorage.getItem(names[i])}</td>
     </tr>`;
   }
+  return out;
 }
 
 function changeTable() {
@@ -298,8 +295,8 @@ function changeTable() {
   table.innerHTML = `
   <thead> 
     <tr> 
-        <th>Player</th> 
-        <th>Wins</th>
+      <th>Player</th> 
+      <th>Wins</th>
     </tr>
   </thead>
 
@@ -316,6 +313,7 @@ function main() {
 
   console.log(localStorage.getItem(winner));
   console.log(winner);
+  changeTable();
 }
 
 main();
